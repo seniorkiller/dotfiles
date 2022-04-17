@@ -1,0 +1,6 @@
+#!/bin/env sh
+
+echo $1 $2 $3 $nnn $PWD
+
+read f
+echo $f
