@@ -6,9 +6,9 @@ export TERMINAL='kitty'
 
 export NNN_FIFO=/tmp/nnn.fifo
 export NNN_PLUG='e:suedit;i:imgview;y:nmount;p:preview-tui;P:fzplug;o:fzopen;l:launch;d:dragdrop;w:!setbg $nnn*;t:testing/test'
+export NNN_TMPFILE="/tmp/.lastd"
+export NNN_SEL='/tmp/.sel'
 
-
-export NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
 
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
