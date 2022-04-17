@@ -12,6 +12,11 @@
  alias polyshape='.config/polybar/shapes/launch.sh'
  alias stes='speedtest'
  alias irssi='irssi --home=~/.config/irssi/'
+ alias :q='exit'
+ alias ..='cd ..'
+ alias .git='cd $HOME/.git'
+ alias .config='cd $HOME/.config'
+
 autoload -U colors && colors
 
 
