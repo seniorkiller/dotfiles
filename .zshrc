@@ -38,6 +38,8 @@ zstyle ':completion:*:*:*:*:descriptions' format '%F{green}-- %d --%f'
 _comp_options+=(globdots)		# Include hidden files.
 
 
+# Fix backspace bug when switching modes
+bindkey "^?" backward-delete-char
 
 
 
