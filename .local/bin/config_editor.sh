@@ -11,12 +11,12 @@ Polybar|$HC/polybar/config.ini
 Polybar Modules|$HC/polybar/modules
 Rofi|$HC/rofi
 Picom|$HC/picom
-Zshrc|$H/.zshrc
-Zsenv|$H/.zshenv
+Zshrc|$HC/zsh/.zshrc
+Zsenv|$HC/zsh/.zshenv
 Config Folder|$HC"
 selected=$(printf "$option" | awk -F '|' '{print $1}' | rofi -dmenu -p "rrr" -i )
 
 
 edit=$(printf "$option"| grep "$selected" | awk -F '|' '{print $2}')
-[ -q $edit ] || kitty nvim $edit &
+[ -q $edit ] || kitty --class Kitty_edit nvim $edit &
 
