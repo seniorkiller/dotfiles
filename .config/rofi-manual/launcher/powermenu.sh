@@ -11,4 +11,8 @@ option=$shutdown \n$restart \n$lock \n$hibernate\n$logout
 choice=$( echo -e $option | rofi -dmenu -p "Power menu")
 
 
-[$choice -eq ]
+[$choice -eq $shutdown] && systemctl shutdown
+[$choice -eq $restart] && systemctl reboot
+[$choice -eq $lock] && lock.sh
+[$choice -eq $hibernate] && systemctl hibernate
+[$choice -eq $logout] && i3-msg exit
