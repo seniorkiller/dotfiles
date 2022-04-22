@@ -1,6 +1,7 @@
 " This line makes pacman-installed global Arch Linux vim packages work.
 source /usr/share/nvim/archlinux.vim
 
+set ic
 set relativenumber
 set number
 autocmd BufRead ~/.config/i3/* setlocal ft=i3config

@@ -18,5 +18,5 @@ selected=$(printf "$option" | awk -F '|' '{print $1}' | rofi -dmenu -p "rrr" -i 
 
 
 edit=$(printf "$option"| grep "$selected" | awk -F '|' '{print $2}')
-[ -q $edit ] || kitty --class Kitty_edit nvim $edit &
+[ -q $selected ] || kitty --class Kitty_edit nvim $edit &
 
