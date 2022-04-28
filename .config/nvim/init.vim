@@ -14,6 +14,9 @@ Plug 'Mofiqul/dracula.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-commentary'
+Plug 'lambdalisue/suda.vim'
 
 call plug#end()
 colorscheme dracula
+
+cmap w!! %!sudo tee > /dev/null %

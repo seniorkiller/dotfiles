@@ -25,24 +25,25 @@ window=""
 options="$screen\n$area\n$window"
 
 chosen="$(echo -e "$options" | $rofi_command -p 'scrot' -dmenu -selected-row 1)"
+dir=$HOME/Pictures/ScreenShot/screenshot_%d-%m-%Y_%H-%M-%S.png
 case $chosen in
     $screen)
 		if [[ -f /usr/bin/scrot ]]; then
-			sleep 1; scrot 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f Pictures ; viewnior Pictures/$f'
+			sleep 1; scrot $dir -e 'xclip -sel c -t image/png $f'
 		else
 			msg
 		fi
         ;;
     $area)
 		if [[ -f /usr/bin/scrot ]]; then
-			scrot -s 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f Pictures ; viewnior Pictures/$f'
+			scrot -s $dir -e 'xclip -sel c -t image/png $f'
 		else
 			msg
 		fi
         ;;
     $window)
 		if [[ -f /usr/bin/scrot ]]; then
-			sleep 1; scrot -u 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f Pictures ; viewnior Pictures/$f'
+			sleep 1; scrot -u $dir -e 'xclip -sel c -t image/png $f'
 		else
 			msg
 		fi
