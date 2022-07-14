@@ -12,8 +12,8 @@ count=$(xrandr --query | grep " connected" | cut -d" " -f1 | wc -l)
 
  if type "xrandr" > /dev/null; then
       for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-        MONITOR=$m polybar --reload bar -c ~/.config/polybar/config.ini &
+        MONITOR=$m polybar --reload bar -c ~/.config/polybar/config.ini -q &
       done
     else
-    polybar --reload bar -c ~/.config/polybar/config.ini &
+    polybar --reload bar -c ~/.config/polybar/config.ini -q &
     fi

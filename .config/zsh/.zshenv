@@ -12,14 +12,15 @@ export NNN_TMPFILE="/tmp/.lastd"
 export NNN_SEL='/tmp/.sel'
 
 
-export XDG_CONFIG_HOME=$HOME/.config
-export XDG_CACHE_HOME=$HOME/.cache
-export XDG_DATA_HOME=$HOME/.local/share
-export XDG_STATE_HOME=$HOME/.local/state
+# export XDG_CONFIG_HOME=$HOME/.config
+# export XDG_CACHE_HOME=$HOME/.cache
+# export XDG_DATA_HOME=$HOME/.local/share
+# export XDG_STATE_HOME=$HOME/.local/state
 
 
 #  Partially supported XDG-BASED-DIR
 
+export WINEPREFIX="$XDG_DATA_HOME"/wineprefixes/default
 export HISTFILE="$XDG_STATE_HOME"/zsh/history
 export DOTBARE_DIR="$HOME/.config/dotbare"
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv

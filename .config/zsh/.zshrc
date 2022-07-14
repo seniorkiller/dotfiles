@@ -16,6 +16,10 @@
  alias ..='cd ..'
  alias .git='cd $HOME/.git'
  alias .config='cd $HOME/.config'
+ alias lbin='cd $HOME/.local/bin'
+ alias passpush='pass git push origin main'
+ alias passpull='pass git pull origin main'
+ alias bin='cd ~/.local/bin'
 
 autoload -U colors && colors
 
@@ -85,7 +89,7 @@ SPACESHIP_VI_MODE_COLOR=cyan
 SPACESHIP_JOBS_SHOW=false
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $HOME/.git/.dotbare/dotbare.plugin.zsh
+source $HOME/Repos/.dotbare/dotbare.plugin.zsh
 n ()
 {
     if [ -n $NNNLVL ] && [ "${NNNLVL:-0}" -ge 1 ]; then

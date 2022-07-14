@@ -25,7 +25,7 @@ window=""
 options="$screen\n$area\n$window"
 
 chosen="$(echo -e "$options" | $rofi_command -p 'scrot' -dmenu -selected-row 1)"
-dir=$HOME/Pictures/ScreenShot/screenshot_%d-%m-%Y_%H-%M-%S.png
+dir=$HOME/Pictures/ScreenShot/screenshot_%Y-%m-%d_%H-%M-%S.png
 case $chosen in
     $screen)
 		if [[ -f /usr/bin/scrot ]]; then
@@ -36,7 +36,7 @@ case $chosen in
         ;;
     $area)
 		if [[ -f /usr/bin/scrot ]]; then
-			scrot -s $dir -e 'xclip -sel c -t image/png $f'
+			scrot -fs $dir -e 'xclip -sel c -t image/png $f'
 		else
 			msg
 		fi

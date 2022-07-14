@@ -19,4 +19,4 @@ Plug 'lambdalisue/suda.vim'
 call plug#end()
 colorscheme dracula
 
-cmap w!! %!sudo tee > /dev/null %
+cmap w!! w !sudo tee > /dev/null %

@@ -12,25 +12,24 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
+exec_always --no-startup-id redraw.sh 
 
-#for more organized config
-set $configd ~/.config/i3/
 
+###   Source config.d/
 include ~/.config/i3/config.d/*.config
 
 font pango:NotoSerifDisplay Nerd Bold 9
 
 set $TERMINAL "kitty"
 
-exec --no-startup-id dex --autostart --environment i3
 bindsym $mod+Shift+r restart
 
 floating_minimum_size 75 x 50
 floating_maximum_size 1280 x 720
 
-#hide_edge_borders both
+hide_edge_borders both
+# smart_gaps on
 
-# Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 workspace "Cool" output eDP-1
@@ -45,13 +44,5 @@ workspace 7 output eDP-1
 workspace 8 output DP-1
 workspace 9 output DP-1
 
-# class                 border  backgr. text    indicator child_border
-#client.focused          #4c566a #4c566a #ffffff #4c566a   #4c566a
-#client.focused_inactive #5f676a #5f676a #ffffff #2f2f2f   #2f2f2f
-#client.unfocused        #222222 #222222 #888888 #292d2e   #222222
-#client.urgent           #2f343a #900000 #ffffff #900000   #900000
-#client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-
-#client.background       #ffffff
 for_window [all] border pixel 3
 
