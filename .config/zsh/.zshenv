@@ -1,7 +1,13 @@
 
+
+
 export PATH="$HOME/.local/bin:$HOME/.script:$PATH"
-export VISUAL='nvim'
-export EDITOR='nvim'
+for d in $HOME/.local/bin/*/; do
+    PATH+=":$d"
+done
+
+export VISUAL='vim'
+export EDITOR='vim'
 export TERMINAL='kitty'
 
 export PASSWORD_STORE_DIR="$XDG_DATA_HOME"/pass

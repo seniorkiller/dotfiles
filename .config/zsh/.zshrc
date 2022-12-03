@@ -1,11 +1,11 @@
 
 #alias's
  alias ls='lsd -l'
- alias vim='nvim'
+ # alias vim='nvim'
  alias sw='swallow'
  alias pc='pacman'
  alias spc='sudo pacman'
- alias pcu='sudo pacman -Syu'
+ alias pcu='sudo pacman -Syu;yay -Su'
  alias pci='sudo pacman -S'
  alias pcr='sudo pacman -R'
  alias cavv='cava -p cavaconfig'
