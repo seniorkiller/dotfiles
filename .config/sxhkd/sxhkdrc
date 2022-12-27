@@ -1,0 +1,59 @@
+
+### Mod Key
+
+## App
+super + F1
+	kitty zsh -c nnn&
+
+super + F2
+	firefox&
+
+## Utility
+super + l
+	lock.sh&
+
+super + p
+	screen-setting.sh&
+
+super + shift + p
+	passmenu
+
+super + shift + s
+	scrot -fs $HOME/Pictures/ScreenShot/screenshot_%d-%m-%Y_%H-%M-%S.png -e 'xclip -sel c -t image/png $f'
+
+super + c
+	config-editor.sh
+
+super + shift + c
+	script-editor.sh
+
+### Player Key
+
+ctrl + period; {period, slash, comma}
+	playerctl {play-pause,next,previous} -p spotify
+
+ctrl + alt + period; {period, slash, comma}
+	playerctl {play-pause,next,previous}
+
+### Special Key
+
+XF86AudioRaiseVolume
+	pulseaudio-ctl up
+
+XF86AudioLowerVolume
+	pulseaudio-ctl down
+
+XF86AudioMute 
+	pactl set-sink-mute @DEFAULT_SINK@ toggle 
+
+XF86AudioMicMute
+	pactl set-source-mute @DEFAULT_SOURCE@ toggle  
+
+XF86MonBrightnessUp 
+	light -A 5
+
+XF86MonBrightnessDown 
+	light -U 5 
+
+super + shift + r
+	killall sxhkd && sxhkd&
