@@ -1,4 +1,11 @@
-
+### Add This to .profile or zshenv  
+# ZDOTDIR=$HOME/.config/zsh
+#
+### XDG Spec Stuff
+# export XDG_CONFIG_HOME=$HOME/.config
+# export XDG_CACHE_HOME=$HOME/.cache
+# export XDG_DATA_HOME=$HOME/.local/share
+# export XDG_STATE_HOME=$HOME/.local/state
 
 
 export PATH="$HOME/.local/bin:$HOME/.script:$PATH"
@@ -14,14 +21,9 @@ export PASSWORD_STORE_DIR="$XDG_DATA_HOME"/pass
 
 export NNN_FIFO=/tmp/nnn.fifo
 export NNN_PLUG='e:suedit;i:imgview;y:nmount;p:preview-tui;P:fzplug;o:fzopen;l:launch;d:dragdrop;w:!setbg $nnn*;t:testing/test'
-export NNN_TMPFILE="/tmp/.lastd"
-export NNN_SEL='/tmp/.sel'
+# export NNN_TMPFILE="/tmp/.lastd"
+# export NNN_SEL='/tmp/.sel'
 
-
-# export XDG_CONFIG_HOME=$HOME/.config
-# export XDG_CACHE_HOME=$HOME/.cache
-# export XDG_DATA_HOME=$HOME/.local/share
-# export XDG_STATE_HOME=$HOME/.local/state
 
 
 #  Partially supported XDG-BASED-DIR

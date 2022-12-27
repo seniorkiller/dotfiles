@@ -1,3 +1,4 @@
+# source ~/.config/zsh/plugin/spaceship-prompt/spaceship.zsh
 
 #alias's
  alias ls='lsd -l'
@@ -88,7 +89,8 @@ SPACESHIP_VI_MODE_COLOR=cyan
 
 SPACESHIP_JOBS_SHOW=false
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.config/zsh/plugin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/Repos/.dotbare/dotbare.plugin.zsh
 n ()
 {
