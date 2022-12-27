@@ -8,7 +8,7 @@
 # export XDG_STATE_HOME=$HOME/.local/state
 
 
-export PATH="$HOME/.local/bin:$HOME/.script:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 for d in $HOME/.local/bin/*/; do
     PATH+=":$d"
 done

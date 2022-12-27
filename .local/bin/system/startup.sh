@@ -7,6 +7,7 @@ fi
 
 if [ $DESKTOP_SESSION = dwm ]; then
 	slstatus&
+	sxhkd&
 fi
 
 dunst&

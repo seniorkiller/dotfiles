@@ -2,9 +2,12 @@
 
 HC=$XDG_CONFIG_HOME
 H=$HOME
+HB=$HOME/.local/bin
 
 option="\
-Add Option|$H/.local/bin/config_editor.sh
+Add Option|$H/.local/bin/system/config_editor.sh
+Dwm Config|$H/Repos/dwm/config.h
+Sxhkd|$HC/sxhkd/sxhkdrc
 I3|$HC/i3/config
 I3 config.d|$HC/i3/config.d
 Polybar|$HC/polybar/config.ini
