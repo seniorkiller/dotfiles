@@ -5,7 +5,7 @@ H=$HOME
 HB=$HOME/.local/bin
 
 option="\
-Add Option|$H/.local/bin/system/config_editor.sh
+Add Option|$H/.local/bin/system/config-editor.sh
 Dwm Config|$H/Repos/dwm/config.h
 Sxhkd|$HC/sxhkd/sxhkdrc
 I3|$HC/i3/config
@@ -22,5 +22,5 @@ selected=$(printf "$option" | awk -F '|' '{print $1}' | rofi -dmenu -p "Config E
 
 
 edit=$(printf "$option"| grep "$selected" | awk -F '|' '{print $2}')
-[ -q $selected ] || kitty --class Kitty_edit nvim $edit &
+[ -q $selected ] || kitty --class Kitty_edit vim $edit &
 

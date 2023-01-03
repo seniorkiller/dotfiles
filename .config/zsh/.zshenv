@@ -29,7 +29,7 @@ export NNN_PLUG='e:suedit;i:imgview;y:nmount;p:preview-tui;P:fzplug;o:fzopen;l:l
 #  Partially supported XDG-BASED-DIR
 
 export WINEPREFIX="$XDG_DATA_HOME"/wineprefixes/default
-export HISTFILE="$XDG_STATE_HOME"/zsh/history
+export HISTFILE=~/.local/state/zsh/history
 export DOTBARE_DIR="$HOME/.config/dotbare"
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 export CARGO_HOME="$XDG_DATA_HOME"/cargo

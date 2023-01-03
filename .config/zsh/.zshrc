@@ -21,6 +21,7 @@
  alias passpush='pass git push origin main'
  alias passpull='pass git pull origin main'
  alias bin='cd ~/.local/bin'
+ alias cddwm='cd ~/Repos/dwm'
 
 autoload -U colors && colors
 
